@@ -21,10 +21,21 @@ header{
     z-index: 999;
     height: 0;
 }
-#navbarNavAltMarkup{
-    background-color: rgba(255, 255, 255, 0.3);
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  header.scrolled nav{
+    background-color: rgba(93, 12, 96, 0.177);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(5px);
+    
+  }
+#navbarNavAltMarkup{
+    background-color: #fff;
     height: 100vh;
     border-radius: 10px;
     left:0;
@@ -33,6 +44,11 @@ header{
     top:0;
     bottom:0;
     
+}
+.icon-social{
+    top:20%;
+    right:10%;
+    z-index: 5;
 }
 .collapse.show{
     display: unset!important;
@@ -84,4 +100,126 @@ header{
     width:160px;
     height: 160px;
     border-radius: 50%;
+}
+.social-item {
+    animation:healthy 1s infinite;
+    border-radius: 50%;
+}
+@keyframes healthy{
+    0%{
+        box-shadow: 0px 0px 0px 0px rgba(151, 38, 125, 0.261);
+    }
+    /* 50%{
+        box-shadow: 0px 0px 5px 12px rgba(198, 18, 18, 0.451);
+    } */
+    100%{
+        box-shadow: 0px 0px 10px 20px rgba(108, 41, 41, 0.799);
+    }
+}
+.navbar-brand  {
+    animation-name:  next ;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    background: linear-gradient(rgb(175, 15, 161),rgb(9, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.feature{
+ 
+    animation:like 2s  ;
+}
+.carousel-control-prev-icon{
+    animation: prev 2s;
+}
+.carousel-control-next-icon{
+    animation: prev-2 2s;
+}
+.nav-tabs .nav-link{
+    border: 0!important;
+}
+.nav-link.active{
+    font-family: "Great Vibes","cursive";
+    font-size: 25px !important;
+    font-weight: 700;
+}
+.tab-pane.fade.active.show {
+    border: 0!important;
+}
+
+
+.tab-pane img{
+    border-radius: 10px;
+    width:70%;
+    height:300px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.tab-pane.fade.active.show img{
+    border-radius: 10px;
+    width:70%;
+    height:300px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+@keyframes next {
+    0%{
+        transform: translateX(300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes like{
+    0%{
+        transform: scale(0);
+
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes prev{
+    0%{
+        transform: translateY(-500%);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes prev-2{
+    0%{
+        transform: translateY(500%);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about{
+    font-family: "Great Vibes","cursive";
+    font-size: 30px;
+}
+.name{
+    font-family: "Great Vibes","cursive";
+    
+    background:linear-gradient(rgb(48, 15, 48),rgb(221, 13, 127));
+    -webkit-text-fill-color: transparent!important;
+    -webkit-background-clip: text!important;
+}
+.about-img{
+    height: 201px;
+    object-fit: cover;
+}
+ #carouselExampleControls button{
+    animation: pop 1s infinite;
+}
+@keyframes pop{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.5);
+    }
 }
