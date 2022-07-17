@@ -23,6 +23,7 @@ header{
 }
 .social-item svg{
     background-color: #fff;
+    border-radius: 50%;
 }
 .fixed-top {
     position: fixed;
