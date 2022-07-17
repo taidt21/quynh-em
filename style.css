@@ -21,6 +21,9 @@ header{
     z-index: 999;
     height: 0;
 }
+.social-item svg{
+    background-color: #fff;
+}
 .fixed-top {
     position: fixed;
     top: 0;
